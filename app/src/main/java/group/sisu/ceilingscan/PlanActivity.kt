@@ -76,7 +76,7 @@ class PlanActivity : AppCompatActivity() {
         }, LinearLayout.LayoutParams(72, 72))
         brandHeader.addView(TextView(this).apply {
             text="SISU  |  Ceiling Scan"
-            textColor=Color.WHITE; textSize=21f; gravity=Gravity.CENTER_VERTICAL
+            setTextColor(Color.WHITE); textSize=21f; gravity=Gravity.CENTER_VERTICAL
             setTypeface(null,Typeface.BOLD); setPadding(12,0,12,0)
         })
         root.addView(brandHeader)
@@ -109,7 +109,7 @@ class PlanActivity : AppCompatActivity() {
         button(controls,"ردیف −",false) { resizeGrid(0,-1) }
         button(controls,"ردیف +",false) { resizeGrid(0,1) }
         layoutLabel=TextView(this).apply {
-            textColor=Color.WHITE; textSize=12f; gravity=Gravity.CENTER
+            setTextColor(Color.WHITE); textSize=12f; gravity=Gravity.CENTER
         }
         controls.addView(layoutLabel,LinearLayout.LayoutParams(0,52,1f))
         button(controls,"ستون −",false) { resizeGrid(-1,0) }
